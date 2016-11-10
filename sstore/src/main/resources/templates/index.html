@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="ISO-8859-1" />
+
+<title>sstore</title>
+</head>
+<body>
+<div th:include="common/header::head"></div>
+   
+   
+Welcome!!<br />
+<div th:text="${message}" ></div>
+
+<table width="100%">
+	<tr><th>Choose category</th></tr>
+   	<tr>
+   		<td>Electronics</td>
+   		<td>Homes</td>
+   		<td>Cars</td>
+   	</tr>
+   	<tr>
+   		<td>Car pool</td>
+   		<td>Furniture</td>
+   		<td>Others</td>
+   	</tr>
+</table>
+
+<div th:replace="common/footer :: footer">no copyright!!</div>
+</body>
+</html>

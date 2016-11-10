@@ -13,6 +13,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
+apply plugin: 'war'
 
 jar {
 	baseName = 'sstore'
@@ -27,6 +28,7 @@ repositories {
 
 
 dependencies {
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-jersey')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
